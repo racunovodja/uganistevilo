@@ -34,6 +34,6 @@ echo "<br />";
 
 
 
-
+//premisli za pretvornik
 
 ?>
