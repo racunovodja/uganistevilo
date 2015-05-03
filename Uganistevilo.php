@@ -48,16 +48,7 @@ if(isset($_POST["igralec"])) {
     echo "<br />";
 }
 
-//števec ni pravilen
 
-$stevec = 0;
-$start = 1;
-   // if ($igralec != $stevilo) {  
-   // for($start; $start < $stevilo; $start++) {
-   //     $stevec = $stevec + 1;   
-   //     echo "<br />Števec:".$stevec."<br />";
-   // }
-   // }
 
 ?>
 
