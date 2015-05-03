@@ -48,7 +48,7 @@ if(isset($_POST["igralec"])) {
     echo "<br />";
 }
 
-//števec
+//števec ni pravilen
 
 $stevec = 0;
 $start = 1;
