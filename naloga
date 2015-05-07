@@ -1,0 +1,48 @@
+<?php
+// izberi naključno število za ugibanje
+if(isset($_POST["stevilo"])) {
+   $stevilo = $_POST["stevilo"];
+} else {
+   $stevilo = rand(1,100);
+}
+
+if(isset($_POST["skrito"])){
+
+    // vnos skritega števila
+    $skrito  = $_POST["skrito"];
+    $stevilo  = $_POST["stevilo"];
+    if ($skrito < $stevilo){ 
+    	echo "Višje število";
+    }elseif ($skrito > $stevilo) {       
+    	echo "Nižje število";
+    }elseif ($skrito == $stevilo) {      
+    	echo "Uganil si!";
+    }
+    echo "<br />Naključno število:".$stevilo."<br />";
+    echo $skrito;
+
+}
+?>
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><h1>Ugani število</h1></title>
+</head>
+
+<body>
+<form action="" method="post" name="ugani-skrito-stevilo">
+    <label for="skrito">Ugani skrito število:</label><br/ >
+    <input type="text" name="skrito" />
+    <input type="hidden" name="stevilo" value="<?= $stevilo ?>" />
+    <input type="submit" value="Oddaj" />
+  
+</form>
+</body>
+</html>
+
+
